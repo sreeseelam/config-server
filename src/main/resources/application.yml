@@ -16,4 +16,5 @@ spring:
     config:
       server:
         git:
-          uri: ${HOME}/Sreenivas/Learning/Workspaces/config-server
+          uri: https://github.com/sreeseelam/config-server
+          force-pull: true
