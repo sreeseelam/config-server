@@ -1,0 +1,19 @@
+server:
+  port: 8980
+
+eureka:
+  instance:
+    hostname: configserver
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${HOME}/Sreenivas/Learning/Workspaces/config-server
